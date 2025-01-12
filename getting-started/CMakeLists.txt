@@ -13,7 +13,7 @@ set(CMAKE_EXE_LINKER_FLAGS_DEBUG "${CMAKE_EXE_LINKER_FLAGS_DEBUG} -Wl,-Map=${CMA
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # Find all source files
-file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/src/*.cpp)
+file(GLOB_RECURSE SOURCES ${CMAKE_SOURCE_DIR}/src/*.cc)
 
 # Define the executable
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -40,7 +40,7 @@ target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17) # Use C++17
 add_custom_command(
     TARGET ${PROJECT_NAME}
     POST_BUILD
-    COMMAND ${CMAKE_CXX_COMPILER} -S -fverbose-asm ${CMAKE_SOURCE_DIR}/src/*.cpp -o ${CMAKE_SOURCE_DIR}/debug/${PROJECT_NAME}.list
+    COMMAND ${CMAKE_CXX_COMPILER} -S -fverbose-asm ${CMAKE_SOURCE_DIR}/src/*.cc -o ${CMAKE_SOURCE_DIR}/debug/${PROJECT_NAME}.list
     COMMENT "Generating assembly listing file"
 )
 
