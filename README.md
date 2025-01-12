@@ -3,7 +3,9 @@
 ## Project Documentation
 
 ### Overview
-This repository contains multiple C++ projects organized in a structured way. Each project has its own directory with source files, headers, and build/debug outputs. This documentation explains how to build, run, and clean any project using provided shell scripts and CMake.
+This repository contains multiple C++ projects organized in a structured way. Each project has its own directory with source files, headers, and build/debug outputs. This documentation explains how to build, run, and clean any project using provided shell scripts and CMake.  
+
+NOTE: Only doing C++ specific concepts.
 
 ---
 
