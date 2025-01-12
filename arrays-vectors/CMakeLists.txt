@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(getting-started)
+project(arrays-vectors)
 
 # Set the output directories for build and debug
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
